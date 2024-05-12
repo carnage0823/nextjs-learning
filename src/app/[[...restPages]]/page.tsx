@@ -31,7 +31,10 @@ export default function Docs({ params }: { params: { slug: string[] } }) {
       {navigationPages.map((item, key) => (
         <p key={key} style={containerStyle}>
           go to
-          <Link href={item.page + (item.id !== undefined ? item.id : "")}>
+          <Link
+            className="text-indigo-600 font-bold"
+            href={item.page + (item.id !== undefined ? item.id : "")}
+          >
             {item.title}
           </Link>
         </p>

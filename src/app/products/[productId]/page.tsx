@@ -31,6 +31,8 @@ export default function ProductDetail({ params }: props) {
     <div>
       <Link href={"/"}>Home</Link>
       <h1>Details About Products {productId}</h1>
+      <Link href={"order"}>order now</Link>
+      <br />
       {productId > 1 && <Link href={`${productId - 1}`}>previous</Link>}{" "}
       <Link href={`${productId + 1}`}>Next</Link>
     </div>

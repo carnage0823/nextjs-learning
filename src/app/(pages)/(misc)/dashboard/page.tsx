@@ -1,6 +1,3 @@
-export function bar() {
-  return <h1>bar chart page </h1>;
-}
-export default function () {
+export default function dashboard() {
   return <h1>Real bar chart page </h1>;
 }

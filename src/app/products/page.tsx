@@ -12,7 +12,9 @@ export default function ProductList() {
       <h1>My Products LIst</h1>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {products.map((item, key) => (
-          <Link href={`products/${item}`}>Product {item}</Link>
+          <Link key={key} href={`products/${item}`}>
+            Product {item}
+          </Link>
         ))}
       </div>
     </div>
